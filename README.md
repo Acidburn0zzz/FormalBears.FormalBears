@@ -2,8 +2,12 @@
  
 Meta framwork for [BEAR.Sunday](https://github.com/bearsunday/BEAR.Sunday) applications
 
+[formal-bears/formal-bears](https://packagist.org/packages/formal-bears/formal-bears)
+
 - [@iteman (KUBO Atuhiro)](https://github.com/iteman) さんによるメタフレームワーク `FormalBears` をコピー、改変して作りました（著者の承諾を得て公開しています）。
 - オリジナル版（本家のリポジトリ）は限定公開です。著者による紹介のスライドが [こちら](https://www.slideshare.net/iteman/the-birth-of-formalbears) で公開されています。
+
+
 
 ## Requires
 
