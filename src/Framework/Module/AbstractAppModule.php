@@ -74,8 +74,9 @@ abstract class AbstractAppModule extends AbstractConfigAwareModule
             if (is_dir($this->appMeta->configDir.'/modules/'.$context)) {
                 $loader->load($this->appMeta->configDir.'/modules/'.$context.'/**/*'.$this->appMeta->configExtension, 'glob');
             }
-
-            $loader->load($this->appMeta->configDir.'/contexts/'.$context.$this->appMeta->configExtension, 'glob');
+            if (is_file($this->appMeta->configDir.'/contexts/'.$context.$this->appMeta->configExtension)) {
+                $loader->load($this->appMeta->configDir.'/contexts/'.$context.$this->appMeta->configExtension, 'glob');
+            }
         }
     }
 
